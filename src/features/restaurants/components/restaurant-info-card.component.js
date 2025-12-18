@@ -19,7 +19,7 @@ export const RestaurantInfoCard = ({ restaurant = {} }) => {
     <Card elevation={5} style={styles.card}>
       <Card.Cover key={name} style={styles.cover} source={{ uri: photos[0] }} />
       <Text style={styles.title}>{name}</Text>
-      <Text style={styles.title}>{address}</Text>
+      <Text style={styles.address}>{address}</Text>
     </Card>
   );
 };
@@ -27,5 +27,6 @@ export const RestaurantInfoCard = ({ restaurant = {} }) => {
 const styles = StyleSheet.create({
   card: { backgroundColor: "white" },
   cover: { padding: 18, backgroundColor: "white" },
-  title: { paddingLeft: 16 },
+  title: { paddingLeft: 16, fontWeight: "bold" },
+  address: { paddingLeft: 16, paddingBottom: 16 },
 });
