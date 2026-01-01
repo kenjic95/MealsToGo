@@ -54,7 +54,7 @@ export const RestaurantInfoCard = ({ restaurant = {} }) => {
     name = "Andrew Chikubi",
     icon = "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
     photos = [
-      "https://instagram.fsyd10-2.fna.fbcdn.net/v/t51.2885-19/575721108_18334831846229275_7915769890048543997_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=instagram.fsyd10-2.fna.fbcdn.net&_nc_cat=107&_nc_oc=Q6cZ2QHZXqlBlAyAm1QARas_FX3QB7wrNXTmNLe4SemPg_cE8WSJ1U6mvt6UfKdC8N-XmBk&_nc_ohc=L1R3MOwG8t4Q7kNvwFZRYaJ&_nc_gid=Z8CO3ka-ALiQmVMhSv_JVg&edm=ALGbJPMBAAAA&ccb=7-5&oh=00_Afk0Fh5TAvUoRDFs84UcQDdDSucOoyNW4PDbEHVwp8-3SA&oe=69497489&_nc_sid=7d3ac5",
+      "https://instagram.fsyd10-2.fna.fbcdn.net/v/t51.2885-19/575721108_18334831846229275_7915769890048543997_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=instagram.fsyd10-2.fna.fbcdn.net&_nc_cat=107&_nc_oc=Q6cZ2QEygPW3YHao-ISaRuzd9l4YMC0EhuPUyC3gLxLXKoi5kbRc1OILBQ-7_LSRcdY4drU&_nc_ohc=_VEYZ-dWUmMQ7kNvwHjk2k7&_nc_gid=uQqbQOCHy9nxbgauhV0_PA&edm=ALGbJPMBAAAA&ccb=7-5&oh=00_AfqdR1TVczLWLZz1WXjM_c05zG4PhCtpAI0cBjp6umq3YQ&oe=695C21C9&_nc_sid=7d3ac5",
     ],
     address = "69 Random street",
     isOpenNow = true,
@@ -81,10 +81,12 @@ export const RestaurantInfoCard = ({ restaurant = {} }) => {
                 CLOSED TEMPORARILY
               </Text>
             )}
-            <Spacer variant="left.large" />
-            {isOpenNow && <SvgXml xml={open} width={20} height={20} />}
-            <Spacer variant="left.large" />
-            <Image style={{ width: 15, height: 15 }} source={{ uri: icon }} />
+            <Spacer position="left" size="large">
+              {isOpenNow && <SvgXml xml={open} width={20} height={20} />}
+            </Spacer>
+            <Spacer position="left" size="large">
+              <Image style={{ width: 15, height: 15 }} source={{ uri: icon }} />
+            </Spacer>
           </SectionEnd>
         </Section>
         <Address>{address}</Address>
