@@ -1744,6 +1744,15 @@
     use-latest-callback "^0.2.4"
     use-sync-external-store "^1.5.0"
 
+"@react-navigation/elements@^2.9.5":
+  version "2.9.5"
+  resolved "https://registry.yarnpkg.com/@react-navigation/elements/-/elements-2.9.5.tgz#29f68c4975351724dcfe1d3bdc76c4d6dc65fc33"
+  integrity sha512-iHZU8rRN1014Upz73AqNVXDvSMZDh5/ktQ1CMe21rdgnOY79RWtHHBp9qOS3VtqlUVYGkuX5GEw5mDt4tKdl0g==
+  dependencies:
+    color "^4.2.3"
+    use-latest-callback "^0.2.4"
+    use-sync-external-store "^1.5.0"
+
 "@react-navigation/native@^7.1.27":
   version "7.1.27"
   resolved "https://registry.yarnpkg.com/@react-navigation/native/-/native-7.1.27.tgz#5be53e9fac9f6173d229b334fe41c2208684bac2"
@@ -1761,6 +1770,15 @@
   integrity sha512-1tJHg4KKRJuQ1/EvJxatrMef3NZXEPzwUIUZ3n1yJ2t7Q97siwRtbynRpQG9/69ebbtiZ8W3ScOZF/OmhvM4Rg==
   dependencies:
     nanoid "^3.3.11"
+
+"@react-navigation/stack@^7.7.0":
+  version "7.7.0"
+  resolved "https://registry.yarnpkg.com/@react-navigation/stack/-/stack-7.7.0.tgz#472f9bd6a7c65131f101a2e6c3d42c85bd5b2028"
+  integrity sha512-JBu/LIvnqxjftF5DCrwqZekO4y+maOskXO+6FY5Hw9c4Q3ttWBK2dsyzwKn4m5Ba3yO5KFtbyAV948gh6cacIg==
+  dependencies:
+    "@react-navigation/elements" "^2.9.5"
+    color "^4.2.3"
+    use-latest-callback "^0.2.4"
 
 "@sinclair/typebox@^0.27.8":
   version "0.27.8"
