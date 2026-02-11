@@ -1,5 +1,5 @@
 import React, { useContext, useState, useEffect } from "react";
-import MapView, { Marker } from "react-native-maps";
+import MapView, { Marker, Callout } from "react-native-maps";
 import styled from "styled-components/native";
 
 import { LocationContext } from "../../../services/location/location.context";
@@ -50,10 +50,10 @@ export const MapScreen = () => {
                 longitude: restaurant.geometry.location.lng,
               }}
               >
-              <MapView.Callout>
+              <Callout>
                 <MapCallout restaurant={restaurant} />
-              </MapView.Callout>
-            </MapView.Marker>
+              </Callout>
+            </Marker>
           );
         })}
       </Map>
