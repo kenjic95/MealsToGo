@@ -12,7 +12,7 @@ const FavouriteButton = styled(TouchableOpacity)`
   z-index: 9;
 `;
 
-export const Favourite = () => {
+export const Favourite = ({ restaurant }) => {
   const { favourites, addToFavourites, removeFromFavourites } =
     useContext(FavouritesContext);
 
