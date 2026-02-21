@@ -25,7 +25,7 @@ const createScreenOptions = ({ route }) => {
   const iconName = TAB_ICON[route.name];
   return {
     headerShown: false,
-    tabBarActiveTintColor: "purple",
+    tabBarActiveTintColor: "tomato",
     tabBarInactiveTintColor: "gray",
     tabBarIcon: ({ size, color }) => (
       <Ionicons name={iconName} size={size} color={color} />
